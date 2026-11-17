@@ -1,0 +1,734 @@
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="topbar">
+  <a class="brand" href="#inicio" aria-label="MindoClass · Trigonometría de mi territorio, ir al inicio">
+    <img src="{{LOGO}}" alt="MindoClass" width="95" height="38">
+    <span class="brand-sep" aria-hidden="true"></span>
+    <span class="brand-course"><b>Trigonometría de mi territorio</b><span>Matemáticas · Grado 9.°</span></span>
+  </a>
+  <div class="top-tools">
+    <div class="ring" title="Tu avance en el recurso">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle class="bg" cx="20" cy="20" r="16"/><circle class="fg" id="ringFg" cx="20" cy="20" r="16" stroke-dasharray="100.5" stroke-dashoffset="100.5"/></svg>
+      <span id="ringTxt">0 %</span>
+    </div>
+    <button class="tool" id="fontDown" aria-label="Reducir el tamaño del texto">A−</button>
+    <button class="tool" id="fontUp" aria-label="Aumentar el tamaño del texto">A+</button>
+    <button class="tool hide-sm" id="contrastBtn" aria-pressed="false" aria-label="Alto contraste">◐</button>
+    <button class="tool" id="themeBtn" aria-label="Cambiar entre modo claro y oscuro">☾</button>
+  </div>
+</header>
+
+<nav class="tabbar" id="tabbar" aria-label="Secciones del curso"></nav>
+
+<div class="layout">
+  <aside class="sidenav" aria-label="Menú del curso">
+    <h2>Tu ruta de aprendizaje</h2>
+    <ul class="navlist" id="navlist"></ul>
+    <div class="side-mindo">
+      <img src="{{M_FRIENDLY}}" alt="">
+      Tu avance se guarda en este dispositivo. Puedes cerrar y volver cuando quieras.
+    </div>
+  </aside>
+
+  <main id="main" tabindex="-1">
+
+<!-- =============================================================== INICIO -->
+<section class="section" id="inicio" data-title="Inicio" data-short="Inicio" data-icon="★" data-sub="Bienvenida y ruta">
+  <div class="hero">
+    <span class="kicker">Grado 9.° · Matemáticas</span>
+    <h1>Trigonometría de mi territorio</h1>
+    <p>Aprende a medir lo que no alcanzas con la mano: la palma de cera, la torre de la catedral, el guadual o la loma del cafetal. Solo necesitas un ángulo, una distancia y un triángulo.</p>
+    <dl class="credits">
+      <div><dt>Autores</dt><dd>[NOMBRE COMPLETO 1], [NOMBRE COMPLETO 2], [NOMBRE COMPLETO 3]</dd></div>
+      <div><dt>Institución</dt><dd>[INSTITUCIÓN]</dd></div>
+      <div><dt>Programa o curso</dt><dd>[NOMBRE DEL CURSO O PROGRAMA]</dd></div>
+      <div><dt>Año</dt><dd>2026</dd></div>
+    </dl>
+    <div class="hero-art" data-art="landscape" role="img" aria-label="Paisaje del Eje Cafetero: montañas, cafetal, casa de bahareque y una palma de cera. Una estudiante mira la copa de la palma y la línea de su mirada forma un triángulo rectángulo con el suelo."></div>
+  </div>
+
+  <div class="intent">
+    <img src="{{M_FRIENDLY}}" alt="Mindo, la mascota de MindoClass, te da la bienvenida">
+    <div>
+      <span class="eyebrow">Resultado de aprendizaje</span>
+      <h2>Al terminar este curso podrás identificar, comprender y usar el seno, el coseno y la tangente para calcular alturas y distancias de tu entorno.</h2>
+      <ul>
+        <li>Reconocer triángulos rectángulos en el paisaje, las casas y los caminos de la región.</li>
+        <li>Nombrar la hipotenusa y los catetos según el ángulo desde donde miras.</li>
+        <li>Calcular seno, coseno y tangente, y saber cuál usar en cada situación.</li>
+        <li>Medir de verdad la altura de algo de tu colegio o tu vereda.</li>
+      </ul>
+      <div class="meta"><span class="pill">⏱ 4 sesiones de 2 horas</span><span class="pill">🧭 No necesitas saber trigonometría</span><span class="pill">📶 Funciona casi todo sin internet</span></div>
+    </div>
+  </div>
+
+  <article class="screen">
+    <div class="screen-head"><span class="eyebrow eyebrow--teach">Tu ruta</span></div>
+    <h3 class="prompt">Cinco momentos, en orden</h3>
+    <p class="purpose"><b>Para qué:</b> saber qué vas a hacer en cada momento y por qué va en ese orden. Primero miras, luego entiendes, después experimentas, aplicas y compruebas.</p>
+    <div class="route" id="routeCards"></div>
+  </article>
+
+  <article class="screen">
+    <div class="screen-head"><span class="eyebrow eyebrow--teach">Cómo funciona</span></div>
+    <h3 class="prompt">Así se usa este recurso</h3>
+    <div class="cards3">
+      <div class="mini"><h4>1. Lee la intención</h4>Cada momento empieza diciéndote qué vas a lograr. Cada pantalla te dice <b>para qué</b> sirve.</div>
+      <div class="mini"><h4>2. Toca y comprueba</h4>Elige, completa o mueve. Luego pulsa <b>Comprobar</b>. Puedes intentarlo otra vez.</div>
+      <div class="mini"><h4>3. El ámbar no es error</h4><span style="color:var(--green-text);font-weight:900">Verde</span> = lo lograste. <span style="color:var(--amber-text);font-weight:900">Ámbar</span> = casi: lee la pista y vuelve a intentarlo. Equivocarse es parte de aprender.</div>
+    </div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="eyebrow">Interpretar</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">Antes de empezar: ¿qué ya sabes?</h3>
+    <p class="purpose"><b>Para qué:</b> recordar tres ideas que vas a usar todo el tiempo. Si alguna se te olvidó, aquí mismo la repasas.</p>
+    <div data-act="d1"></div>
+    <div data-act="d2"></div>
+    <div data-act="d3"></div>
+  </article>
+
+  <div class="next-row"><span></span><button class="btn btn-advance" data-go="explorar">Empezar: Explorar →</button></div>
+</section>
+
+<!-- =============================================================== 1 EXPLORAR -->
+<section class="section" id="explorar" data-title="Explorar" data-short="1 Explorar" data-icon="1" data-sub="El triángulo rectángulo">
+  <div class="hero">
+    <div class="hero-top">
+      <div class="hero-num"><b>1</b><small>Momento</small></div>
+      <div><span class="kicker">Explorar · Sesión 1</span><h1>El triángulo rectángulo está en todas partes</h1>
+      <p>Una escalera apoyada en un muro de bahareque, el camino que sube por el cafetal, la mirada hacia la copa de una palma: todos esconden el mismo triángulo.</p></div>
+    </div>
+    <div class="hero-art" data-art="ladder" role="img" aria-label="Escalera de guadua apoyada en el muro de una casa de bahareque; con el suelo y el muro forma un triángulo rectángulo."></div>
+  </div>
+
+  <div class="intent">
+    <img src="{{M_STUDENT}}" alt="">
+    <div>
+      <span class="eyebrow">Intención de aprendizaje</span>
+      <h2>Reconocer triángulos rectángulos en tu entorno y nombrar sus lados: hipotenusa, cateto opuesto y cateto adyacente.</h2>
+      <ul>
+        <li>Encuentro el ángulo recto (90°) en una situación real.</li>
+        <li>Identifico la hipotenusa como el lado más largo.</li>
+        <li>Nombro el cateto opuesto y el adyacente <b>según el ángulo desde donde miro</b>.</li>
+      </ul>
+      <div class="meta"><span class="pill">⏱ Sesión 1 · 2 horas</span><span class="pill">📌 Evidencia: identificar en una figura los catetos y la hipotenusa</span></div>
+    </div>
+  </div>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 1</span><span class="eyebrow">Observar</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">Mira: trigonometría en el entorno</h3>
+    <p class="purpose"><b>Para qué:</b> despertar la pregunta que guía todo el curso: ¿cómo medir algo que no podemos alcanzar?</p>
+    <p><b>Antes de dar play</b>, lee estas preguntas. Mientras ves el video, busca sus respuestas:</p>
+    <div class="guide">
+      <div><b>1</b> ¿Qué objetos o lugares del entorno aparecen en el video?</div>
+      <div><b>2</b> ¿Qué se quiere medir? ¿Por qué no se puede medir directamente con un metro?</div>
+      <div><b>3</b> ¿Dónde ves un triángulo? ¿Cuál de sus esquinas es «cuadrada» (90°)?</div>
+    </div>
+    <div class="video" id="video1"></div>
+    <p class="cc-note"><b>Subtítulos:</b> cuando el video empiece, toca el botón <b>CC</b> (abajo a la derecha del reproductor) para activarlos o desactivarlos. En el celular, toca el video y luego ⚙ › Subtítulos.</p>
+    <details class="transcript">
+      <summary>Transcripción del video</summary>
+      <div class="transcript-body"><p>[PEGA AQUÍ LA TRANSCRIPCIÓN DEL VIDEO]</p></div>
+    </details>
+    <p class="note">¿Sin internet? Sigue con la pantalla 2 y vuelve al video cuando tengas conexión. También está en la pestaña <b>Recursos</b>.</p>
+    <h4>Después del video</h4>
+    <p>Escribe un objeto de tu colegio, tu barrio o tu vereda cuya altura te gustaría conocer y por qué no puedes medirlo directamente.</p>
+    <div data-act="ex-video"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 2</span><span class="eyebrow">Interpretar</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">¿En cuáles de estas escenas hay un triángulo rectángulo?</h3>
+    <p class="purpose"><b>Para qué:</b> entrenar tu ojo para ver triángulos rectángulos en el territorio antes de aprender fórmulas.</p>
+    <p>Un triángulo rectángulo tiene <b>una esquina cuadrada</b>, de 90°, como la que forma una pared con el piso. Selecciona <b>todas</b> las escenas donde lo veas.</p>
+    <div data-act="ex-scenes"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 3</span><span class="eyebrow eyebrow--teach">Ejemplo explicativo</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">Las partes del triángulo rectángulo, paso a paso</h3>
+    <p class="purpose"><b>Para qué:</b> aprender los nombres de los lados, que son el idioma de toda la trigonometría.</p>
+    <p>Imagina la escalera de guadua de la portada. El <b>suelo</b> y el <b>muro</b> se encuentran en una esquina cuadrada. La <b>escalera</b> une los dos. Avanza paso a paso:</p>
+    <div class="figure"><div data-art="parts" role="img" aria-label="Triángulo rectángulo con el ángulo recto marcado con un cuadrito, el ángulo theta abajo a la izquierda, la hipotenusa en azul oscuro, el cateto opuesto en verde y el cateto adyacente en azul."></div></div>
+    <div data-act="ex-parts"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 4</span><span class="eyebrow eyebrow--manip">Manipulador</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">El nombre depende de dónde miras</h3>
+    <p class="purpose"><b>Para qué:</b> descubrir que «opuesto» y «adyacente» cambian si cambias el ángulo de referencia. La hipotenusa nunca cambia.</p>
+    <p>Cambia el ángulo de referencia <b>θ</b> (se lee «theta») y mira qué pasa con los nombres de los catetos.</p>
+    <div data-act="ex-role"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 5</span><span class="eyebrow">Arrastrar al lugar</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">Ponle nombre a cada lado: la palma de cera</h3>
+    <p class="purpose"><b>Para qué:</b> demostrar que ya nombras los lados sin ayuda, en una situación nueva del territorio.</p>
+    <p>Sara está en el Valle de Cocora mirando la copa de una palma de cera, nuestro árbol nacional. Toca una ficha y luego el recuadro del lado donde va. Para cambiar una ficha, toca el recuadro.</p>
+    <div data-act="ex-label1"></div>
+    <div data-act="ex-label2"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 6</span><span class="eyebrow eyebrow--teach">Reflexionar</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">¿Dónde hay triángulos rectángulos en tu comunidad?</h3>
+    <p class="purpose"><b>Para qué:</b> conectar lo que aprendiste con tu propio territorio. Lo vas a necesitar en el reto final.</p>
+    <p>Piensa en tu casa, tu colegio, la finca, la carretera o el parque. Escribe al menos <b>dos situaciones</b> y señala dónde está el ángulo recto. Ideas: el techo de un kiosco, una rampa, la sombra de un poste, el cable de una tarabita…</p>
+    <div data-act="ex-reflect"></div>
+  </article>
+
+  <div class="closure">
+    <h3>Ya puedo…</h3>
+    <ul><li>Encontrar el ángulo recto en una escena real.</li><li>Decir cuál lado es la hipotenusa (el más largo, frente al ángulo recto).</li><li>Nombrar el cateto opuesto y el adyacente según el ángulo θ.</li></ul>
+  </div>
+  <div class="next-row"><button class="btn btn-quiet" data-go="inicio">← Inicio</button><button class="btn btn-advance" data-go="comprender">Siguiente: Comprender →</button></div>
+</section>
+
+<!-- =============================================================== 2 COMPRENDER -->
+<section class="section" id="comprender" data-title="Comprender" data-short="2 Comprender" data-icon="2" data-sub="Seno, coseno y tangente">
+  <div class="hero">
+    <div class="hero-top">
+      <div class="hero-num"><b>2</b><small>Momento</small></div>
+      <div><span class="kicker">Comprender · Sesión 2</span><h1>Seno, coseno y tangente: comparar lados</h1>
+      <p>Las tres razones trigonométricas son solo divisiones entre dos lados del triángulo. Lo sorprendente es que dependen únicamente del ángulo.</p></div>
+    </div>
+    <div class="hero-art" data-art="road" role="img" aria-label="Camino que sube por la ladera de un cafetal. Por cada tramo horizontal que avanzas, subes una cierta altura."></div>
+  </div>
+
+  <div class="intent">
+    <img src="{{M_STUDY}}" alt="">
+    <div>
+      <span class="eyebrow">Intención de aprendizaje</span>
+      <h2>Comprender que el seno, el coseno y la tangente comparan dos lados del triángulo rectángulo, y calcularlos a partir de las medidas de sus lados.</h2>
+      <ul>
+        <li>Explico qué es una razón con un ejemplo del entorno.</li>
+        <li>Escribo las fórmulas de seno, coseno y tangente usando SOH-CAH-TOA.</li>
+        <li>Calculo las tres razones de un triángulo y uso la calculadora en grados.</li>
+      </ul>
+      <div class="meta"><span class="pill">⏱ Sesión 2 · 2 horas</span><span class="pill">📌 Evidencia: ejercicios interactivos y procedimientos resueltos</span></div>
+    </div>
+  </div>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 1</span><span class="eyebrow eyebrow--teach">Ejemplo explicativo</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">¿Qué es una razón? El camino al cafetal</h3>
+    <p class="purpose"><b>Para qué:</b> entender la idea de «razón» (comparar dividiendo) antes de ver seno, coseno y tangente.</p>
+    <p>Don Arturo sube a su cafetal por un camino recto. Por cada <b class="a">8 metros</b> que avanza en horizontal, sube <b class="o">6 metros</b> de altura.</p>
+    <div class="formula"><span>razón de subida =</span><span class="frac"><span class="o">lo que sube</span><span class="a">lo que avanza</span></span><span>=</span><span class="frac"><span class="o">6</span><span class="a">8</span></span><span>= 0,75</span></div>
+    <p>Ese <b>0,75</b> quiere decir: <b>por cada metro que avanzas, subes 0,75 metros</b>. Si avanza 16 m, sube 12 m; si avanza 4 m, sube 3 m. Los números cambian, pero la razón sigue siendo 0,75 porque la inclinación del camino es la misma.</p>
+    <div class="tip"><span class="tip-ico">!</span><p><b>Esta es la gran idea:</b> la inclinación (el ángulo) decide la razón. Si el camino es más empinado, la razón es mayor. En la trigonometría, a estas comparaciones las llamamos <b>razones trigonométricas</b>.</p></div>
+    <div data-act="co-ratio"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 2</span><span class="eyebrow eyebrow--manip">Manipulador</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">El ángulo manda: guaduas grandes y pequeñas</h3>
+    <p class="purpose"><b>Para qué:</b> comprobar con tus propias manos que las razones no dependen del tamaño del triángulo, solo del ángulo.</p>
+    <p>A la misma hora de la tarde, una guadua pequeña y una grande proyectan sombras con el mismo ángulo. Mueve el <b>tamaño</b> sin tocar el ángulo y observa las tres divisiones. Luego cambia el <b>ángulo</b>.</p>
+    <div data-act="co-similar"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 3</span><span class="eyebrow eyebrow--teach">Lo esencial</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">Las tres razones y el truco SOH-CAH-TOA</h3>
+    <p class="purpose"><b>Para qué:</b> tener a mano las tres fórmulas y un truco para no olvidarlas nunca.</p>
+    <div class="cards3">
+      <div class="mini"><div class="big">SOH</div><b>Seno</b> = <b class="o">Opuesto</b> / <b class="h">Hipotenusa</b>
+        <div class="formula">sen θ = <span class="frac"><span class="o">opuesto</span><span class="h">hipotenusa</span></span></div></div>
+      <div class="mini"><div class="big">CAH</div><b>Coseno</b> = <b class="a">Adyacente</b> / <b class="h">Hipotenusa</b>
+        <div class="formula">cos θ = <span class="frac"><span class="a">adyacente</span><span class="h">hipotenusa</span></span></div></div>
+      <div class="mini"><div class="big">TOA</div><b>Tangente</b> = <b class="o">Opuesto</b> / <b class="a">Adyacente</b>
+        <div class="formula">tan θ = <span class="frac"><span class="o">opuesto</span><span class="a">adyacente</span></span></div></div>
+    </div>
+    <p>Lee «SOH-CAH-TOA» en voz alta como una palabra: <b>so-ca-toa</b>. La primera letra de cada sílaba es la razón (<b>S</b>eno, <b>C</b>oseno, <b>T</b>angente); las otras dos dicen qué lado va arriba y cuál abajo.</p>
+    <div class="note">En Colombia escribimos <b>sen</b> para el seno. En la calculadora aparece como <b>sin</b> (del inglés <i>sine</i>). Es lo mismo.</div>
+    <h4>Relaciona cada concepto con su significado</h4>
+    <div data-act="co-pairs"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 4</span><span class="eyebrow eyebrow--teach">Ejemplo resuelto</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">Paso a paso: la guadua apoyada en el muro</h3>
+    <p class="purpose"><b>Para qué:</b> ver cómo se calcula cada razón de principio a fin, con el porqué de cada paso.</p>
+    <p>Una guadua de <b class="h">10 m</b> está apoyada en el muro de una casa. Toca el muro a <b class="o">6 m</b> de altura y su pie queda a <b class="a">8 m</b> del muro. El ángulo θ está en el suelo, donde la guadua toca la tierra.</p>
+    <div class="figure"><div data-art="tri6810" role="img" aria-label="Triángulo con hipotenusa 10, cateto opuesto 6 vertical y cateto adyacente 8 horizontal. El ángulo theta está abajo a la izquierda."></div></div>
+    <div data-act="co-worked"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 5</span><span class="eyebrow">Ejemplo con huecos</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">Ahora tú: la rampa del trapiche</h3>
+    <p class="purpose"><b>Para qué:</b> hacer tú los pasos que antes te mostramos. Parte del camino ya está hecho; completa los huecos.</p>
+    <p>La rampa por donde suben la caña al trapiche panelero <b class="o">sube 5 m</b>, <b class="a">avanza 12 m</b> en horizontal y <b class="h">mide 13 m</b> de largo. El ángulo θ está abajo, donde empieza la rampa.</p>
+    <div class="figure"><div data-art="tri51213" role="img" aria-label="Rampa: cateto opuesto 5, cateto adyacente 12, hipotenusa 13, ángulo theta abajo a la izquierda."></div></div>
+    <div data-act="co-faded"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 6</span><span class="eyebrow">Detectar el error</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">Valentina se equivocó en un paso. ¿En cuál?</h3>
+    <p class="purpose"><b>Para qué:</b> revisar un procedimiento ajeno te ayuda a no cometer el mismo error. Es el error más común del curso.</p>
+    <p>Valentina quería el <b>coseno</b> de θ para la guadua de la pantalla 4 (opuesto 6, adyacente 8, hipotenusa 10). Toca el paso que está mal.</p>
+    <div data-act="co-error"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 7</span><span class="eyebrow">Interpretar</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">¿Qué razón relaciona los dos catetos?</h3>
+    <p class="purpose"><b>Para qué:</b> elegir la razón correcta según los lados que tienes, que es la habilidad clave para resolver problemas.</p>
+    <p>Un triángulo rectángulo tiene un cateto opuesto de <b class="o">6 m</b>, un cateto adyacente de <b class="a">8 m</b> y una hipotenusa de <b class="h">10 m</b>. ¿Qué razón trigonométrica relaciona <b>directamente los dos catetos</b>?</p>
+    <div data-act="co-check"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 8</span><span class="eyebrow">Ordenar</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">Usa bien la calculadora: tan(35°)</h3>
+    <p class="purpose"><b>Para qué:</b> obtener el valor de una razón para cualquier ángulo sin equivocarte de modo. Lo necesitarás en el laboratorio.</p>
+    <p>Cuando el triángulo no trae todos los lados, la calculadora te da el valor de la razón. Ordena los pasos para calcular <b>tan(35°)</b> en una calculadora científica o en el celular.</p>
+    <div class="note"><b>Cuidado:</b> si la pantalla dice <b>RAD</b> o <b>GRAD</b>, tus resultados saldrán mal. Tiene que decir <b>DEG</b> (grados). En el celular, gira la calculadora a horizontal y busca «Deg».</div>
+    <div data-act="co-seq"></div>
+  </article>
+
+  <div class="closure">
+    <h3>Ya puedo…</h3>
+    <ul><li>Explicar que una razón compara dos lados dividiendo.</li><li>Decir que las razones dependen del ángulo, no del tamaño del triángulo.</li><li>Calcular sen θ, cos θ y tan θ con SOH-CAH-TOA y usar la calculadora en modo DEG.</li></ul>
+  </div>
+  <div class="next-row"><button class="btn btn-quiet" data-go="explorar">← Explorar</button><button class="btn btn-advance" data-go="experimentar">Siguiente: Experimentar →</button></div>
+</section>
+
+<!-- =============================================================== 3 EXPERIMENTAR -->
+<section class="section" id="experimentar" data-title="Experimentar" data-short="3 Experimentar" data-icon="3" data-sub="Laboratorio de medición">
+  <div class="hero">
+    <div class="hero-top">
+      <div class="hero-num"><b>3</b><small>Momento</small></div>
+      <div><span class="kicker">Experimentar · Sesión 3</span><h1>Laboratorio de medición</h1>
+      <p>Mide la altura de una palma, una guadua o la torre de la catedral sin subirte. Cambia el ángulo y la distancia, y descubre cómo responde la altura.</p></div>
+    </div>
+    <div class="hero-art" data-art="clino" role="img" aria-label="Estudiante con un clinómetro casero hecho con transportador, pitillo, hilo y una tuerca, apuntando a la copa de un árbol."></div>
+  </div>
+
+  <div class="intent">
+    <img src="{{M_READER}}" alt="">
+    <div>
+      <span class="eyebrow">Intención de aprendizaje</span>
+      <h2>Experimentar cómo cambia la altura calculada cuando modificas el ángulo de elevación y la distancia, y usar la calculadora trigonométrica para resolver triángulos.</h2>
+      <ul>
+        <li>Explico qué es el ángulo de elevación y cómo se mide.</li>
+        <li>Uso altura = distancia × tan(ángulo) y sumo la altura de los ojos.</li>
+        <li>Registro datos y saco conclusiones a partir de ellos.</li>
+      </ul>
+      <div class="meta"><span class="pill">⏱ Sesión 3 · 2 horas</span><span class="pill">📌 Evidencia: registro de datos y resultados</span></div>
+    </div>
+  </div>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 1</span><span class="eyebrow eyebrow--teach">Ejemplo explicativo</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">El ángulo de elevación y tu clinómetro casero</h3>
+    <p class="purpose"><b>Para qué:</b> saber qué ángulo medir en la vida real y con qué instrumento sencillo hacerlo.</p>
+    <p>El <b>ángulo de elevación</b> es el ángulo entre la línea <b>horizontal</b> de tus ojos y la línea que va de tus ojos a la <b>punta</b> del objeto. Cuanto más alto el objeto (o más cerca estés), mayor es el ángulo.</p>
+    <div class="figure"><div data-art="elevation" role="img" aria-label="Una persona mira la copa de un árbol. Una línea horizontal sale de sus ojos y otra línea va hasta la copa. El ángulo entre ellas es el ángulo de elevación."></div></div>
+    <div class="cards2">
+      <div class="mini"><h4>Materiales del clinómetro</h4>Un transportador, un pitillo, 20 cm de hilo, una tuerca o piedrita y cinta. Pega el pitillo en el borde recto del transportador y cuelga el hilo con la tuerca desde el centro.</div>
+      <div class="mini"><h4>Cómo se lee</h4>Mira la punta del objeto por el pitillo. El hilo cae recto por el peso. El ángulo de elevación es <b>90° menos</b> lo que marca el hilo. Si el hilo marca 55°, la elevación es 35°.</div>
+    </div>
+    <h4>Ordena cómo se mide la altura de un árbol con el clinómetro</h4>
+    <div data-act="xp-seq"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 2</span><span class="eyebrow eyebrow--manip">Manipulador</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">Laboratorio: ¿qué tan alto es?</h3>
+    <p class="purpose"><b>Para qué:</b> ver cómo la tangente convierte un ángulo y una distancia en una altura, y cómo cambia el resultado al mover cada dato.</p>
+    <div class="formula">altura = <span class="a">distancia</span> × tan(<span>ángulo</span>) + <span>altura de los ojos</span></div>
+    <p>Elige el objeto, mueve el ángulo (entre 5° y 85°) y la distancia. Empieza con el ejemplo: <b>35°</b> y <b>12 m</b>. Luego resuelve los tres retos.</p>
+    <div data-act="xp-lab"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 3</span><span class="eyebrow">Interpretar datos</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">Tu registro y tus conclusiones</h3>
+    <p class="purpose"><b>Para qué:</b> convertir lo que observaste en el laboratorio en conclusiones que puedes explicar con tus palabras.</p>
+    <p>En el laboratorio pulsa <b>Registrar este intento</b> para guardar tus mediciones aquí. Prueba al menos tres: el mismo ángulo con distancias distintas, y la misma distancia con ángulos distintos.</p>
+    <div class="table-wrap"><table><thead><tr><th>#</th><th>Objeto</th><th>Ángulo</th><th>Distancia</th><th>tan(ángulo)</th><th>Altura total</th></tr></thead><tbody id="recBody"><tr><td colspan="6" style="color:var(--muted)">Todavía no has registrado intentos.</td></tr></tbody></table></div>
+    <button class="btn btn-quiet no-print" id="recClear">Borrar registro</button>
+    <h4>Ahora responde con base en tus datos</h4>
+    <div data-act="xp-c1"></div>
+    <div data-act="xp-c2"></div>
+    <div data-act="xp-c3"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 4</span><span class="eyebrow eyebrow--manip">Calculadora</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">Calculadora trigonométrica</h3>
+    <p class="purpose"><b>Para qué:</b> obtener el seno, el coseno y la tangente de cualquier ángulo, y resolver un triángulo cuando conoces un ángulo y un lado.</p>
+    <div data-act="xp-calc"></div>
+    <h4>Pregunta para pensar</h4>
+    <div data-act="xp-sen30"></div>
+  </article>
+
+  <div class="closure">
+    <h3>Ya puedo…</h3>
+    <ul><li>Explicar qué es el ángulo de elevación y medirlo con un clinómetro casero.</li><li>Calcular una altura con distancia × tan(ángulo) y sumar la altura de mis ojos.</li><li>Concluir, a partir de datos, cómo cambia la altura con el ángulo y la distancia.</li></ul>
+  </div>
+  <div class="next-row"><button class="btn btn-quiet" data-go="comprender">← Comprender</button><button class="btn btn-advance" data-go="aplicar">Siguiente: Aplicar →</button></div>
+</section>
+
+<!-- =============================================================== 4 APLICAR -->
+<section class="section" id="aplicar" data-title="Aplicar" data-short="4 Aplicar" data-icon="4" data-sub="Problemas del territorio">
+  <div class="hero">
+    <div class="hero-top">
+      <div class="hero-num"><b>4</b><small>Momento</small></div>
+      <div><span class="kicker">Aplicar · Sesión 4</span><h1>Problemas de mi territorio</h1>
+      <p>La catedral de Manizales, los caminos del cafetal, las palmas de Cocora y las cometas de agosto. Ahora tú eliges la razón y resuelves.</p></div>
+    </div>
+    <div class="hero-art" data-art="city" role="img" aria-label="Silueta de una catedral con una torre alta entre montañas; desde el parque, una persona mira la punta de la torre."></div>
+  </div>
+
+  <div class="intent">
+    <img src="{{M_STUDENT}}" alt="">
+    <div>
+      <span class="eyebrow">Intención de aprendizaje</span>
+      <h2>Resolver problemas reales del Eje Cafetero eligiendo la razón adecuada (seno, coseno o tangente) y siguiendo un método en cuatro pasos.</h2>
+      <ul>
+        <li>Identifico qué lado conozco y qué lado busco.</li>
+        <li>Elijo la razón que une esos dos lados.</li>
+        <li>Calculo y reviso si el resultado tiene sentido.</li>
+      </ul>
+      <div class="meta"><span class="pill">⏱ Sesión 4 · primera hora</span><span class="pill">📌 Evidencia: problemas resueltos con procedimiento</span></div>
+    </div>
+  </div>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 1</span><span class="eyebrow eyebrow--teach">Método</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">El método de 4 pasos para cualquier problema</h3>
+    <p class="purpose"><b>Para qué:</b> tener un camino fijo para no perderte, sin importar de qué trate el problema.</p>
+    <ol class="steps">
+      <li class="step"><span class="step-n">1</span><div><div class="step-act">Dibuja y marca el ángulo θ.</div><div class="step-why">Un dibujo rápido, aunque sea feo, te muestra dónde está el ángulo recto y dónde está θ.</div></div></li>
+      <li class="step"><span class="step-n">2</span><div><div class="step-act">Señala qué lado conoces y cuál buscas: O, A o H.</div><div class="step-why">Escribe <b>O</b> (opuesto), <b>A</b> (adyacente) o <b>H</b> (hipotenusa) junto a cada dato.</div></div></li>
+      <li class="step"><span class="step-n">3</span><div><div class="step-act">Elige la razón que une esos dos lados: SOH-CAH-TOA.</div><div class="step-why">Si tienes O y H → seno. Si tienes A y H → coseno. Si tienes O y A → tangente.</div></div></li>
+      <li class="step"><span class="step-n">4</span><div><div class="step-act">Despeja, calcula y revisa.</div><div class="step-why">Pregúntate: ¿tiene sentido? Un cateto nunca puede ser más largo que la hipotenusa.</div></div></li>
+    </ol>
+    <h4>Práctica del paso 3: ¿qué razón usarías en cada caso?</h4>
+    <div data-act="ap-sort"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 2</span><span class="eyebrow">Problema guiado</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">La torre de la Catedral de Manizales</h3>
+    <p class="purpose"><b>Para qué:</b> recorrer el método completo con apoyo, decidiendo tú cada paso.</p>
+    <p>Estás en la Plaza de Bolívar, a <b class="a">60 m</b> de la base de la torre de la Catedral Basílica de Manizales. Con tu clinómetro ves la punta de la torre con un ángulo de elevación de <b>60°</b>. Tus ojos están a <b>1,5 m</b> del suelo. ¿Cuánto mide la torre?</p>
+    <div class="figure"><div data-art="cathedral" role="img" aria-label="Persona a 60 metros de una torre de catedral mirando la punta con un ángulo de 60 grados."></div></div>
+    <div data-act="ap-guided"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 3</span><span class="eyebrow">Resolver</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">El camino del cafetal (seno)</h3>
+    <p class="purpose"><b>Para qué:</b> usar el seno cuando conoces la hipotenusa y buscas el cateto opuesto.</p>
+    <p>Don Arturo sube por un camino recto de <b class="h">50 m</b> que forma un ángulo de <b>30°</b> con la horizontal. ¿Cuántos metros de altura gana al llegar arriba?</p>
+    <div class="figure"><div data-art="p-slope" role="img" aria-label="Camino inclinado de 50 metros con ángulo de 30 grados en la base; se pregunta por la altura."></div></div>
+    <div data-act="ap-p1"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 4</span><span class="eyebrow">Resolver</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">La escalera de la cosecha (coseno)</h3>
+    <p class="purpose"><b>Para qué:</b> usar el coseno cuando conoces la hipotenusa y buscas el cateto adyacente.</p>
+    <p>Para reparar el alero de una casa de bahareque, apoyan una escalera de <b class="h">4 m</b> en el muro. La escalera forma <b>65°</b> con el suelo. ¿A qué distancia del muro está el pie de la escalera?</p>
+    <div class="figure"><div data-art="p-ladder" role="img" aria-label="Escalera de 4 metros apoyada en un muro con ángulo de 65 grados con el suelo; se pregunta por la distancia del pie al muro."></div></div>
+    <div data-act="ap-p2"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 5</span><span class="eyebrow">Resolver</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">La palma de cera del Valle de Cocora (tangente)</h3>
+    <p class="purpose"><b>Para qué:</b> aplicar sin ayuda el procedimiento completo del laboratorio, incluida la altura de los ojos.</p>
+    <p>Estás a <b class="a">20 m</b> de una palma de cera y ves su copa con un ángulo de elevación de <b>70°</b>. Tus ojos están a <b>1,5 m</b> del suelo. ¿Cuál es la altura total de la palma?</p>
+    <div class="figure"><div data-art="p-palm" role="img" aria-label="Persona a 20 metros de una palma de cera, mirando la copa con 70 grados de elevación."></div></div>
+    <div data-act="ap-p3"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 6</span><span class="eyebrow">Decidir en contexto</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">El yarumo y el ángulo de 88°</h3>
+    <p class="purpose"><b>Para qué:</b> tomar decisiones como quien mide de verdad: elegir dónde pararse para que el resultado sea confiable.</p>
+    <p>Mateo se paró muy cerca de un yarumo y su clinómetro marcó <b>88°</b>. Un pequeño error al leer el hilo cambia mucho el resultado. ¿Qué le recomiendas?</p>
+    <div data-act="ap-decide"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 7</span><span class="eyebrow">Desafío ⭐</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">La cometa de agosto</h3>
+    <p class="purpose"><b>Para qué:</b> transferir lo aprendido a una situación donde tú debes decidir todo, sin pasos guiados.</p>
+    <p>En agosto, mes de vientos y cometas, Luciana suelta <b class="h">30 m</b> de hilo. El hilo, bien tenso, forma <b>50°</b> con el suelo. Si sostiene el hilo a <b>1 m</b> del suelo, ¿a qué altura del suelo está la cometa?</p>
+    <div class="figure"><div data-art="p-kite" role="img" aria-label="Cometa con 30 metros de hilo que forma 50 grados con la horizontal."></div></div>
+    <div data-act="ap-p4"></div>
+  </article>
+
+  <div class="closure">
+    <h3>Ya puedo…</h3>
+    <ul><li>Seguir el método de 4 pasos en cualquier problema.</li><li>Elegir entre seno, coseno y tangente según los lados que conozco y busco.</li><li>Decidir cómo medir para obtener un resultado confiable.</li></ul>
+  </div>
+  <div class="next-row"><button class="btn btn-quiet" data-go="experimentar">← Experimentar</button><button class="btn btn-advance" data-go="evaluar">Siguiente: Evaluar →</button></div>
+</section>
+
+<!-- =============================================================== 5 EVALUAR -->
+<section class="section" id="evaluar" data-title="Evaluar" data-short="5 Evaluar" data-icon="5" data-sub="Compruebo lo que aprendí">
+  <div class="hero">
+    <div class="hero-top">
+      <div class="hero-num"><b>5</b><small>Momento</small></div>
+      <div><span class="kicker">Evaluar · Sesión 4</span><h1>Compruebo lo que aprendí</h1>
+      <p>Preguntas nuevas, una sola oportunidad por pregunta y un resumen de tus logros por objetivo. Luego, mírate en el espejo con la autoevaluación.</p></div>
+    </div>
+    <div class="hero-art" data-art="mountains" role="img" aria-label="Cordillera con el nevado al fondo y montañas verdes."></div>
+  </div>
+
+  <div class="intent">
+    <img src="{{M_STUDY}}" alt="">
+    <div>
+      <span class="eyebrow">Intención de aprendizaje</span>
+      <h2>Comprobar qué tanto lograste los objetivos del curso y reflexionar sobre cómo aprendiste.</h2>
+      <ul>
+        <li>Respondo preguntas nuevas sin pistas.</li>
+        <li>Reconozco qué objetivo domino y cuál debo repasar.</li>
+        <li>Valoro mi propio aprendizaje con honestidad.</li>
+      </ul>
+      <div class="meta"><span class="pill">⏱ 30 minutos</span><span class="pill">📌 Evidencia: resultado por objetivo y autoevaluación</span></div>
+    </div>
+  </div>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 1</span><span class="eyebrow">Comprobación</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">Nueve preguntas, una oportunidad</h3>
+    <p class="purpose"><b>Para qué:</b> saber con honestidad qué aprendiste. Aquí no hay pistas: si fallas, verás la respuesta y su explicación.</p>
+    <p>Ten a mano tu calculadora (en modo <b>DEG</b>). Escribe los decimales con coma o con punto, como prefieras.</p>
+    <div data-act="ev-quiz"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 2</span><span class="eyebrow eyebrow--teach">Autoevaluación</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">¿Cómo voy?</h3>
+    <p class="purpose"><b>Para qué:</b> reconocer tu nivel en cada objetivo para saber qué repasar. No hay respuestas buenas o malas.</p>
+    <div data-act="ev-self"></div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="screen-n">Pantalla 3</span><span class="eyebrow eyebrow--teach">Reflexionar</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">Mi reflexión</h3>
+    <p class="purpose"><b>Para qué:</b> pensar en cómo aprendiste, no solo en qué aprendiste.</p>
+    <p>Responde con tus palabras: <b>¿Qué fue lo más difícil y cómo lo superaste? ¿Para qué te sirve la trigonometría en tu territorio?</b></p>
+    <div data-act="ev-reflect"></div>
+  </article>
+
+  <div class="next-row"><button class="btn btn-quiet" data-go="aplicar">← Aplicar</button><button class="btn btn-advance" data-go="reto">Siguiente: Reto final →</button></div>
+</section>
+
+<!-- =============================================================== RETO FINAL -->
+<section class="section" id="reto" data-title="Reto final" data-short="Reto final" data-icon="⚑" data-sub="Midiendo nuestro territorio">
+  <div class="hero">
+    <div class="hero-top">
+      <div class="hero-num"><b>⚑</b><small>Reto</small></div>
+      <div><span class="kicker">Reto final · En grupo</span><h1>Midiendo nuestro territorio</h1>
+      <p>Salgan con su grupo, elijan un árbol, una construcción o un poste del colegio y midan su altura con la tangente. Luego comparen y expliquen.</p></div>
+    </div>
+    <div class="hero-art" data-art="landscape2" role="img" aria-label="Grupo de estudiantes que mide la altura de un árbol con cinta métrica y clinómetro."></div>
+  </div>
+
+  <div class="intent">
+    <img src="{{M_FRIENDLY}}" alt="">
+    <div>
+      <span class="eyebrow">Intención de aprendizaje</span>
+      <h2>Aplicar la tangente para medir la altura real de un elemento de tu entorno, trabajando en equipo y explicando el procedimiento.</h2>
+      <ul><li>Mido una distancia horizontal y un ángulo de elevación con cuidado.</li><li>Calculo la altura y la comparo con la de las demás personas de mi grupo.</li><li>Explico el procedimiento en un informe breve con fotos.</li></ul>
+      <div class="meta"><span class="pill">⏱ Sesión 4 · segunda hora</span><span class="pill">👥 Grupos de 3 o 4</span><span class="pill">📌 Evidencia: informe breve, fotografías y procedimiento</span></div>
+    </div>
+  </div>
+
+  <article class="screen">
+    <div class="screen-head"><span class="eyebrow eyebrow--teach">Paso a paso</span></div>
+    <h3 class="prompt">Cómo hacer la medición</h3>
+    <p class="purpose"><b>Para qué:</b> que cada integrante sepa qué hacer y que las medidas salgan confiables.</p>
+    <ol class="steps">
+      <li class="step"><span class="step-n">1</span><div><div class="step-act">Elijan el objeto y un terreno plano frente a él.</div><div class="step-why">Si el suelo sube o baja, la distancia ya no es horizontal y el triángulo cambia.</div></div></li>
+      <li class="step"><span class="step-n">2</span><div><div class="step-act">Midan la distancia horizontal hasta la base con la cinta métrica.</div><div class="step-why">Es el cateto adyacente. Midan hasta el centro del tronco o de la base.</div></div></li>
+      <li class="step"><span class="step-n">3</span><div><div class="step-act">Midan la altura de los ojos de quien usa el clinómetro.</div><div class="step-why">El triángulo empieza en los ojos, no en el suelo. Esa altura se suma al final.</div></div></li>
+      <li class="step"><span class="step-n">4</span><div><div class="step-act">Lean el ángulo de elevación tres veces y saquen el promedio.</div><div class="step-why">Promediar reduce los errores de pulso. Busquen ángulos entre 30° y 60°.</div></div></li>
+      <li class="step"><span class="step-n">5</span><div><div class="step-act">Cada integrante mide desde una distancia distinta.</div><div class="step-why">Si las mediciones dan alturas parecidas, la medición es confiable.</div></div></li>
+      <li class="step"><span class="step-n">6</span><div><div class="step-act">Calculen, comparen y tomen fotos del proceso.</div><div class="step-why">Usen la tabla de abajo. Las fotos son parte de la evidencia.</div></div></li>
+    </ol>
+    <div class="note"><b>Seguridad:</b> no se paren en la vía, no se suban a muros ni a árboles y no miren directamente al sol por el pitillo.</div>
+  </article>
+
+  <article class="screen" data-screen>
+    <div class="screen-head"><span class="eyebrow eyebrow--manip">Registro del grupo</span><span class="screen-ok">✓ Hecho</span></div>
+    <h3 class="prompt">Tabla de mediciones</h3>
+    <p class="purpose"><b>Para qué:</b> calcular la altura de cada medición y comparar. La tabla calcula sola; tú revisa que tenga sentido.</p>
+    <label style="font-weight:800">Objeto medido: <input id="retoObj" style="margin-top:6px;width:100%;min-height:44px;padding:0 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);font:inherit" placeholder="Ej.: el guayacán del patio"></label>
+    <div class="table-wrap"><table><thead><tr><th>Integrante</th><th>Distancia (m)</th><th>Ángulo (°)</th><th>Ojos (m)</th><th>Altura (m)</th></tr></thead><tbody id="retoBody"></tbody></table></div>
+    <div class="readouts"><div class="readout hl"><small>Promedio del grupo</small><b id="retoAvg">—</b></div><div class="readout"><small>Diferencia mayor − menor</small><b id="retoRange">—</b></div></div>
+    <div data-act="rt-table"></div>
+    <div class="actions no-print"><button class="btn btn-quiet" onclick="window.print()">🖨 Imprimir o guardar en PDF</button></div>
+  </article>
+
+  <article class="screen">
+    <div class="screen-head"><span class="eyebrow eyebrow--teach">Informe breve</span></div>
+    <h3 class="prompt">Qué debe llevar su informe</h3>
+    <p class="purpose"><b>Para qué:</b> comunicar el procedimiento matemático para que otra persona pueda repetirlo.</p>
+    <div class="cards2">
+      <div class="mini"><h4>Contenido</h4><ol style="margin:0;padding-left:18px"><li>Qué midieron y dónde (con una foto).</li><li>Un dibujo del triángulo con θ, O, A y H.</li><li>La tabla de mediciones.</li><li>El cálculo de una medición escrito paso a paso.</li><li>Por qué creen que los resultados difieren.</li></ol></div>
+      <div class="mini"><h4>Cómo se valora</h4><table><tbody>
+        <tr><td><b>Dibujo</b></td><td>Marca bien θ, catetos e hipotenusa.</td></tr>
+        <tr><td><b>Cálculo</b></td><td>Usa la tangente y suma los ojos.</td></tr>
+        <tr><td><b>Datos</b></td><td>Tabla completa y promedio.</td></tr>
+        <tr><td><b>Reflexión</b></td><td>Explica las diferencias.</td></tr>
+      </tbody></table></div>
+    </div>
+  </article>
+  <div class="next-row"><button class="btn btn-quiet" data-go="evaluar">← Evaluar</button><button class="btn btn-advance" data-go="recursos">Recursos →</button></div>
+</section>
+
+<!-- =============================================================== RECURSOS -->
+<section class="section" id="recursos" data-title="Recursos" data-short="Recursos" data-icon="▤" data-sub="Video, enlaces y glosario">
+  <div class="hero">
+    <div class="hero-top">
+      <div class="hero-num"><b>▤</b><small>Extra</small></div>
+      <div><span class="kicker">Para profundizar</span><h1>Recursos para seguir aprendiendo</h1>
+      <p>El video del curso, simuladores para explorar más, un glosario y una ficha resumen para imprimir.</p></div>
+    </div>
+  </div>
+
+  <article class="screen">
+    <div class="screen-head"><span class="eyebrow">Video</span></div>
+    <h3 class="prompt">Trigonometría en el entorno</h3>
+    <div class="video" id="video2"></div>
+    <p style="margin:0 0 8px"><a href="https://youtu.be/qEzqqdJhSCM" target="_blank" rel="noopener">Abrir el video en YouTube ↗</a></p>
+    <p class="cc-note"><b>Subtítulos:</b> cuando el video empiece, toca el botón <b>CC</b> (abajo a la derecha del reproductor) para activarlos o desactivarlos. En el celular, toca el video y luego ⚙ › Subtítulos.</p>
+    <details class="transcript">
+      <summary>Transcripción del video</summary>
+      <div class="transcript-body"><p>[PEGA AQUÍ LA TRANSCRIPCIÓN DEL VIDEO]</p></div>
+    </details>
+  </article>
+
+  <article class="screen">
+    <div class="screen-head"><span class="eyebrow">Para explorar más</span></div>
+    <h3 class="prompt">Simuladores y explicaciones</h3>
+    <div class="links">
+      <a class="link-card" href="https://www.geogebra.org/" target="_blank" rel="noopener"><span class="nav-ico">G</span><span><b>GeoGebra</b><small>Construye triángulos, mueve sus vértices y mide ángulos y lados.</small></span></a>
+      <a class="link-card" href="https://es.khanacademy.org/math/trigonometry" target="_blank" rel="noopener"><span class="nav-ico">K</span><span><b>Khan Academy · Trigonometría</b><small>Videos cortos y ejercicios con pistas para practicar más.</small></span></a>
+      <a class="link-card" href="https://phet.colorado.edu/es/" target="_blank" rel="noopener"><span class="nav-ico">P</span><span><b>PhET · Simulaciones</b><small>Simulaciones interactivas de matemáticas y ciencias.</small></span></a>
+    </div>
+  </article>
+
+  <article class="screen">
+    <div class="screen-head"><span class="eyebrow eyebrow--teach">Ficha resumen</span></div>
+    <h3 class="prompt">Todo el curso en una página</h3>
+    <div class="cards3">
+      <div class="mini"><div class="big">SOH</div><div class="formula">sen θ = <span class="frac"><span class="o">O</span><span class="h">H</span></span></div></div>
+      <div class="mini"><div class="big">CAH</div><div class="formula">cos θ = <span class="frac"><span class="a">A</span><span class="h">H</span></span></div></div>
+      <div class="mini"><div class="big">TOA</div><div class="formula">tan θ = <span class="frac"><span class="o">O</span><span class="a">A</span></span></div></div>
+    </div>
+    <div class="formula">altura = distancia × tan(ángulo de elevación) + altura de los ojos</div>
+    <dl class="glossary">
+      <dt>Triángulo rectángulo</dt><dd>Triángulo con un ángulo de 90° (una esquina cuadrada).</dd>
+      <dt>Hipotenusa (H)</dt><dd>El lado más largo; está frente al ángulo recto.</dd>
+      <dt>Cateto opuesto (O)</dt><dd>El cateto que está frente al ángulo θ, sin tocarlo.</dd>
+      <dt>Cateto adyacente (A)</dt><dd>El cateto que toca al ángulo θ (y no es la hipotenusa).</dd>
+      <dt>Razón</dt><dd>Comparación de dos cantidades dividiéndolas, como 6 ÷ 8 = 0,75.</dd>
+      <dt>Ángulo de elevación</dt><dd>Ángulo entre la horizontal de tus ojos y la línea hacia la punta de un objeto.</dd>
+      <dt>Clinómetro</dt><dd>Instrumento para medir ángulos de inclinación. Se puede hacer con un transportador.</dd>
+    </dl>
+    <div class="actions no-print"><button class="btn btn-quiet" onclick="window.print()">🖨 Imprimir ficha</button></div>
+  </article>
+
+  <article class="screen">
+    <div class="screen-head"><span class="eyebrow eyebrow--teach">Accesibilidad</span></div>
+    <h3 class="prompt">Este recurso se adapta a ti</h3>
+    <ul>
+      <li><b>A− / A+</b> arriba cambia el tamaño de la letra. <b>◐</b> sube el contraste y <b>☾</b> activa el modo oscuro.</li>
+      <li>Todo se puede usar con el teclado (Tab, Enter y flechas en los deslizadores).</li>
+      <li>Las figuras tienen descripción para lectores de pantalla y los resultados se anuncian en voz.</li>
+      <li>Todo, menos el video y los enlaces externos, funciona sin internet una vez abierto el archivo.</li>
+      <li>Tu avance se guarda solo en este dispositivo. <button class="btn btn-quiet" id="resetAll" style="min-height:40px;margin-top:6px">Borrar mi avance</button></li>
+    </ul>
+  </article>
+  <details class="screen ficha" id="ficha">
+    <summary><span class="eyebrow eyebrow--teach">Para docentes y evaluadores</span><span class="ficha-title">Ficha del recurso (para docentes y evaluadores)</span></summary>
+
+    <h4>Datos generales</h4>
+    <div class="table-wrap"><table><tbody>
+      <tr><th scope="row">Necesidad de aprendizaje</th><td>En grado 9.° la trigonometría suele enseñarse como fórmulas sin sentido. Muchos estudiantes no reconocen el triángulo rectángulo fuera del tablero, confunden cateto opuesto y adyacente, y usan la calculadora en un modo equivocado. El recurso parte de situaciones del Eje Cafetero (palma de cera, catedral, guadua, cafetal, trapiche) para que la medición indirecta tenga un propósito real.</td></tr>
+      <tr><th scope="row">Población</th><td>Estudiantes de grado 9.° de básica secundaria, sin conocimientos previos de trigonometría, de zonas urbanas y rurales con conectividad limitada.</td></tr>
+      <tr><th scope="row">Duración</th><td>4 sesiones de 2 horas (8 horas en total).</td></tr>
+      <tr><th scope="row">Modalidad</th><td>Presencial con apoyo digital (aula o sala de sistemas) y trabajo autónomo. Se usa en computador o celular, con o sin internet, y cierra con una salida de campo en grupo.</td></tr>
+      <tr><th scope="row">Resultado de aprendizaje</th><td>Identificar, comprender y usar el seno, el coseno y la tangente para calcular alturas y distancias del entorno.</td></tr>
+    </tbody></table></div>
+
+    <h4>Matriz CREA</h4>
+    <div class="table-wrap"><table class="stack">
+      <thead><tr><th>Criterio</th><th>Cómo se cumple</th><th>Dónde se ve</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Criterio"><b>C</b> · Contextualización</td><td data-label="Cómo se cumple">Todos los problemas ocurren en lugares y oficios de la región: Valle de Cocora, Catedral de Manizales, casas de bahareque, guaduales, trapiche panelero y cometas de agosto. Las ilustraciones muestran ese paisaje.</td><td data-label="Dónde se ve">Inicio (portada); Explorar 2 y 5; Comprender 1, 4 y 5; Aplicar 2 a 7.</td></tr>
+        <tr><td data-label="Criterio"><b>R</b> · Relevancia</td><td data-label="Cómo se cumple">Responde a una pregunta útil: medir lo que no se alcanza con la mano. Termina con una medición real en el colegio o la vereda, y los datos reales llevan su fuente.</td><td data-label="Dónde se ve">Explorar 1 y 6; Experimentar 1; Aplicar 2 y 5 (datos con fuente); Reto final.</td></tr>
+        <tr><td data-label="Criterio"><b>E</b> · Experiencia interactiva</td><td data-label="Cómo se cumple">Cada pantalla pide hacer algo: elegir, arrastrar, ordenar, completar o mover deslizadores. Las simulaciones calculan con valores reales y la retroalimentación explica cada error común (por ejemplo, usar seno en vez de tangente u olvidar la altura de los ojos).</td><td data-label="Dónde se ve">Explorar 4; Comprender 2 y 6; Experimentar 2 a 4; Aplicar 2; Evaluar 1.</td></tr>
+        <tr><td data-label="Criterio"><b>A</b> · Accesibilidad</td><td data-label="Cómo se cumple">Botones A−/A+, alto contraste y modo oscuro; uso completo con teclado; figuras con descripción para lectores de pantalla y resultados anunciados en voz; transcripción y subtítulos del video; colores que no dependen del rojo; funciona sin conexión y guarda el avance.</td><td data-label="Dónde se ve">Barra superior; Explorar 1 y Recursos (transcripción); Recursos › Accesibilidad.</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>Secuencia didáctica</h4>
+    <div class="table-wrap"><table class="stack">
+      <thead><tr><th>Sesión</th><th>Momento</th><th>Qué hace el estudiante</th><th>Evidencia</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Sesión">1</td><td data-label="Momento">Inicio y Explorar</td><td data-label="Qué hace el estudiante">Repasa saberes previos, ve el video, reconoce triángulos rectángulos y nombra hipotenusa y catetos según el ángulo.</td><td data-label="Evidencia">Respuestas de Explorar 2 a 5 y reflexión de la pantalla 6.</td></tr>
+        <tr><td data-label="Sesión">2</td><td data-label="Momento">Comprender</td><td data-label="Qué hace el estudiante">Construye la idea de razón, comprueba que depende del ángulo, aprende SOH-CAH-TOA y practica con ejemplos resueltos, con huecos y con error.</td><td data-label="Evidencia">Ejercicios interactivos y procedimientos completados.</td></tr>
+        <tr><td data-label="Sesión">3</td><td data-label="Momento">Experimentar</td><td data-label="Qué hace el estudiante">Construye un clinómetro casero, usa el laboratorio de medición, registra datos y saca conclusiones.</td><td data-label="Evidencia">Tabla de registro y conclusiones.</td></tr>
+        <tr><td data-label="Sesión">4 (1.ª hora)</td><td data-label="Momento">Aplicar y Evaluar</td><td data-label="Qué hace el estudiante">Resuelve problemas del territorio con el método de 4 pasos y presenta la prueba final y la autoevaluación.</td><td data-label="Evidencia">Problemas resueltos, resultado por objetivo y autoevaluación.</td></tr>
+        <tr><td data-label="Sesión">4 (2.ª hora)</td><td data-label="Momento">Reto final</td><td data-label="Qué hace el estudiante">En grupos de 3 o 4 personas mide la altura real de un elemento del colegio y compara resultados.</td><td data-label="Evidencia">Tabla del grupo, fotografías e informe breve.</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>Por qué HTML con la tecnología MindoClass y no Genially o Canva</h4>
+    <ul>
+      <li><b>Funciona sin conexión:</b> es un solo archivo. Una vez abierto, todo menos el video y los enlaces externos se usa sin internet, algo clave en veredas con señal limitada.</li>
+      <li><b>Simulaciones con cálculo real:</b> el laboratorio, la calculadora y la tabla del reto calculan con funciones trigonométricas de verdad; no son animaciones fijas.</li>
+      <li><b>Retroalimentación según el error:</b> cada respuesta numérica reconoce los errores típicos (razón equivocada, dividir en vez de multiplicar, olvidar la altura de los ojos) y da una pista específica.</li>
+      <li><b>Accesibilidad:</b> tamaño de letra, contraste, modo oscuro, teclado y lectores de pantalla, difíciles de garantizar en plantillas de presentación.</li>
+      <li><b>Avance guardado:</b> el progreso y las respuestas se guardan en el dispositivo y se pueden retomar.</li>
+    </ul>
+
+    <h4>Tipos de interacción usados</h4>
+    <div class="table-wrap"><table class="stack">
+      <thead><tr><th>Tipo</th><th>Dónde está</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Tipo">Selección única o múltiple</td><td data-label="Dónde está">Inicio (saberes previos); Explorar 2; Comprender 1 y 7; Experimentar 3 y 4; Aplicar 6</td></tr>
+        <tr><td data-label="Tipo">Respuesta abierta escrita</td><td data-label="Dónde está">Explorar 1 y 6; Evaluar 3</td></tr>
+        <tr><td data-label="Tipo">Ejemplo explicativo paso a paso</td><td data-label="Dónde está">Explorar 3; Comprender 4</td></tr>
+        <tr><td data-label="Tipo">Manipulador de ángulo de referencia</td><td data-label="Dónde está">Explorar 4</td></tr>
+        <tr><td data-label="Tipo">Arrastrar etiquetas a la figura</td><td data-label="Dónde está">Explorar 5</td></tr>
+        <tr><td data-label="Tipo">Manipulador de triángulos semejantes</td><td data-label="Dónde está">Comprender 2</td></tr>
+        <tr><td data-label="Tipo">Relacionar parejas</td><td data-label="Dónde está">Comprender 3</td></tr>
+        <tr><td data-label="Tipo">Ejemplo con huecos</td><td data-label="Dónde está">Comprender 5</td></tr>
+        <tr><td data-label="Tipo">Detectar el error</td><td data-label="Dónde está">Comprender 6</td></tr>
+        <tr><td data-label="Tipo">Ordenar pasos</td><td data-label="Dónde está">Comprender 8; Experimentar 1</td></tr>
+        <tr><td data-label="Tipo">Laboratorio de medición (simulación)</td><td data-label="Dónde está">Experimentar 2</td></tr>
+        <tr><td data-label="Tipo">Calculadora trigonométrica</td><td data-label="Dónde está">Experimentar 4</td></tr>
+        <tr><td data-label="Tipo">Clasificar en categorías</td><td data-label="Dónde está">Aplicar 1</td></tr>
+        <tr><td data-label="Tipo">Problema guiado por pasos</td><td data-label="Dónde está">Aplicar 2</td></tr>
+        <tr><td data-label="Tipo">Respuesta numérica con pistas</td><td data-label="Dónde está">Aplicar 3, 4, 5 y 7</td></tr>
+        <tr><td data-label="Tipo">Prueba con resultado por objetivo</td><td data-label="Dónde está">Evaluar 1</td></tr>
+        <tr><td data-label="Tipo">Autoevaluación</td><td data-label="Dónde está">Evaluar 2</td></tr>
+        <tr><td data-label="Tipo">Tabla de mediciones que calcula sola</td><td data-label="Dónde está">Reto final</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cc-note">Créditos: contenidos interactivos creados con la tecnología MindoClass. Apoyo de inteligencia artificial en la elaboración de explicaciones y actividades. Datos reales: <a href="https://www.radionacional.co/noticias/actualidad/manizales-catedral-nuestra-se%C3%B1ora-rosario" target="_blank" rel="noopener">Radio Nacional de Colombia</a> (Catedral de Manizales) y <a href="https://www.guinnessworldrecords.com/world-records/633650-tallest-living-palm-tree" target="_blank" rel="noopener">Guinness World Records</a> (palma de cera).</p>
+  </details>
+
+  <div class="next-row"><button class="btn btn-quiet" data-go="reto">← Reto final</button><button class="btn btn-advance" data-go="inicio">Volver al inicio</button></div>
+</section>
+
+<footer class="foot"><img src="{{LOGO}}" alt="MindoClass"><span>Trigonometría de mi territorio · Recurso educativo digital para grado 9.° · [NOMBRE COMPLETO 1], [NOMBRE COMPLETO 2], [NOMBRE COMPLETO 3] · 2026<br><small>Contenidos interactivos creados con la tecnología MindoClass. Apoyo de inteligencia artificial en la elaboración de explicaciones y actividades.</small></span></footer>
+  </main>
+</div>
+<div class="sr-only" aria-live="polite" id="live"></div>
