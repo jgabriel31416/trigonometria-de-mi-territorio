@@ -2,7 +2,7 @@ import base64, sys, os
 B=os.path.dirname(os.path.abspath(__file__)); A=os.path.join(B,'..','assets')
 def uri(f,m): return f'data:{m};base64,'+base64.b64encode(open(os.path.join(A,f),'rb').read()).decode()
 body=open(os.path.join(B,'body.html'),encoding='utf8').read()
-for k,f in {'LOGO':'logo.webp','M_FRIENDLY':'m_friendly.webp','M_STUDENT':'m_student.webp','M_STUDY':'m_study.webp','M_READER':'m_reader.webp'}.items():
+for k,f in {'LOGO':'logo.webp','M_FRIENDLY':'m_friendly.webp','M_STUDENT':'m_student.webp','M_STUDY':'m_study.webp','M_READER':'m_reader.webp','GAME_FARM':'juego_granja.webp'}.items():
     body=body.replace('{{'+k+'}}',uri(f,'image/webp'))
 css=open(os.path.join(B,'style.css'),encoding='utf8').read()
 js=open(os.path.join(B,'art.js'),encoding='utf8').read()+'\n'+open(os.path.join(B,'app.js'),encoding='utf8').read()

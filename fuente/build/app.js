@@ -534,14 +534,14 @@ function renderCalc(el, cfg, done) {
    Un archivo abierto con doble clic (file://) no tiene sitio, así que el
    reproductor incrustado falla (error 153). En ese caso el botón abre el
    video en YouTube; publicado en un sitio web, se reproduce aquí mismo. */
-function mountVideo(box, withLink) {
+function mountVideo(box, withLink, id = 'qEzqqdJhSCM', name = 'Trigonometría en el entorno') {
   if (!box) return;
-  const YT = 'https://youtu.be/qEzqqdJhSCM';
+  const YT = `https://youtu.be/${id}`;
   const local = !/^https?:$/.test(location.protocol);
-  box.innerHTML = `<button type="button" class="video-poster" aria-label="${local ? 'Abrir en YouTube el video' : 'Reproducir el video'} Trigonometría en el entorno"><span class="play"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#1769e8"/></svg></span>Trigonometría en el entorno<small style="font-weight:700;opacity:.8">${local ? 'Toca para verlo en YouTube · requiere internet' : 'Toca para reproducir · requiere internet'}</small></button>`;
+  box.innerHTML = `<button type="button" class="video-poster" aria-label="${local ? 'Abrir en YouTube el video' : 'Reproducir el video'} ${name}"><span class="play"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#1769e8"/></svg></span>${name}<small style="font-weight:700;opacity:.8">${local ? 'Toca para verlo en YouTube · requiere internet' : 'Toca para reproducir · requiere internet'}</small></button>`;
   $('button', box).addEventListener('click', () => {
     if (local) { window.open(YT, '_blank', 'noopener'); return; }
-    box.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/qEzqqdJhSCM?autoplay=1&rel=0&cc_load_policy=1&hl=es" title="Video: Trigonometría en el entorno" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+    box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&cc_load_policy=1&hl=es" title="Video: ${name}" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
   });
   if (withLink) {
     box.insertAdjacentHTML('afterend', `<p class="video-alt" style="margin:-4px 0 10px;font-size:14px"><a href="${YT}" target="_blank" rel="noopener">Ver en YouTube ↗</a>${local ? ' <span style="color:var(--muted)">· Como abriste el recurso desde un archivo, el video se abre en YouTube en una pestaña nueva.</span>' : ''}</p>`);
@@ -654,7 +654,7 @@ function init() {
     if (cfg.track !== false) tracked.set(id, sec);
     try { RENDER[cfg.type](n, cfg, (ok) => markDone(id, ok), id); } catch (e) { console.error(id, e); }
   });
-  mountVideo($('#video1'), true); mountVideo($('#video2'), false);
+  mountVideo($('#video0'), true, '0hAaMpuIx_E', 'Así funciona este recurso'); mountVideo($('#video1'), true); mountVideo($('#video2'), false);
   drawRecords();
   $('#recClear').addEventListener('click', () => { S.records = []; save(); drawRecords(); });
   const go = (id) => { show(id); try { history.pushState(null, '', '#' + id); } catch (e) { /* sin historial: igual navega */ } };
